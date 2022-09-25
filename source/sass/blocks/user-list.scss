@@ -1,0 +1,46 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    gap: 23px;
+  }
+}
+
+.user-list__link {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $base-black;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+
+    &:hover,
+    &:focus {
+      color: $base-primary;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+    padding: 30px 20px;
+    display: flex;
+    gap: 8px;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+  }
+}
+
+.user-list__text {
+  color: inherit;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}

@@ -1,0 +1,125 @@
+.slider__slide--flat-white {
+  background-color: $flat-white;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $flat-white 77%, $base-white 77% 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
+    background-color: $flat-white;
+  }
+}
+
+.slider__slide--lavender {
+  background-color: $lavender-latte;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $lavender-latte 77%, $base-white 77% 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
+    background-color: $lavender-latte;
+  }
+}
+
+.slider__slide--espresso {
+  background-color: $espresso;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $espresso 77%, $base-white 77% 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
+    background-color: $espresso;
+  }
+}
+
+.slider__pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.slider__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 65px;
+}
+
+.slider__pagination .swiper-pagination-bullet {
+  width: 62px;
+  height: 4px;
+  background-color: $base-white;
+  border: none;
+  border-radius: 0%;
+  opacity: 1;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($base-primary, 0.25);
+  }
+}
+
+.slider__pagination .swiper-pagination-bullet-active {
+  background-color: $base-primary;
+  cursor: auto;
+
+  &:hover,
+  &:focus {
+    background-color: $base-primary;
+  }
+}
+
+.slider__button.swiper-button-next,
+.slider__button.swiper-button-prev {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $base-primary;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+
+    &:active {
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.slider__button.swiper-button-prev {
+  left: 0;
+}
+
+.slider__button--next.swiper-button-next {
+  right: 0;
+  transform: scale(-1, 1);
+}
+
+.slider__button[aria-disabled="true"] {
+  color: $base-grey;
+}
+
+.slider__arrow {
+  position: relative;
+  top: 22px;
+
+  @media (min-width: $tablet-width) {
+    top: -72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 22px;
+  }
+}

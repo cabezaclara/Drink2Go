@@ -1,0 +1,27 @@
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    margin-bottom: 26px;
+    margin-top: -3px;
+  }
+}
+
+.sorting__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 3px;
+  margin-right: 9px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
+}

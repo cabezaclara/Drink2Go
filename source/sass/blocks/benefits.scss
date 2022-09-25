@@ -1,0 +1,122 @@
+.benefits {
+  padding: 50px 20px 60px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 20px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px;
+  }
+}
+
+.benefits__badge {
+  margin-bottom: 4px;
+}
+
+.benefits__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.benefits__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 30px;
+    row-gap: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.benefits__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 339px;
+    display: block;
+    padding-left: 72px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+    align-self: center;
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: relative;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.benefits__item--speed::before {
+  background-image: url("../../img/speed.svg");
+}
+
+.benefits__item--comfort::before {
+  background-image: url("../../img/fit.svg");
+}
+
+.benefits__item--vivacity::before {
+  background-image: url("../../img/energy.svg");
+  background-position: 0 2px;
+  margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.benefits__item--ecology::before {
+  background-image: url("../../img/ecology.svg");
+}

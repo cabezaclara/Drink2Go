@@ -1,0 +1,24 @@
+.copyright {
+  text-align: center;
+  color: $base-grey;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.copyright__link {
+  color: $base-grey;
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.copyright__icon {
+  position: relative;
+  top: 4px;
+}

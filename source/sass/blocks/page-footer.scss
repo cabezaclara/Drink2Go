@@ -1,0 +1,128 @@
+.page-footer {
+  @media (min-width: $tablet-width) {
+    padding: 40px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    column-gap: 30px;
+  }
+}
+
+.page-footer__header {
+  border-bottom: 1px solid $base-secondary;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.page-footer__wrapper {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+}
+
+.page-footer__logo {
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.page-footer__logo img {
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.page-footer__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 52px;
+}
+
+.page-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -3px;
+  }
+}
+
+.page-footer__nav {
+  padding: 20px;
+  border-bottom: 1px solid $base-secondary;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.page-footer__main {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+.page-footer__main--wrapper {
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.page-footer__subtitle {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  color: $base-primary;
+  margin-bottom: 12px;
+}
+
+.page-footer__footer {
+  padding: 17px 20px 30px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1 / 1;
+    padding: 0;
+  }
+}

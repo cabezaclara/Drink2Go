@@ -1,0 +1,20 @@
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-black;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+  }
+}

@@ -1,0 +1,40 @@
+.footer-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 222px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+  }
+}
+
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.footer-nav__link {
+  display: inline-block;
+  color: $base-black;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 8px 0;
+  margin-bottom: 4px;
+
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.footer-nav__item:last-child .footer-nav__link {
+  margin-bottom: 0;
+}

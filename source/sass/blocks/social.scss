@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social__link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $base-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $base-secondary;
+    border-radius: 4px;
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: rgba($base-primary, 0.25);
+  }
+}
